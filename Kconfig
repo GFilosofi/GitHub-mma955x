@@ -1,0 +1,9 @@
+config SENSORS_MMA955X_FEATURED
+	tristate "MMA955x Intelligent Motion-Sensing Platform"
+	depends on I2C && SYSFS
+	default n
+	help
+	If you say yes here you get support for the Freescale MMA955XL
+	accelerometer sensor. This driver can also be built as a module.
+	If so, the module will be called mma955x.
+
